@@ -40,6 +40,11 @@ body, button {
     color: #414141;
     padding: 8px;
 }
+.nav_menu ul a:hover {
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+}
 #academy {
     color: gray;
 }
@@ -92,6 +97,9 @@ main {
     padding: 8px;
     width: 90%;
 }
+.hero_text button:hover {
+    background-color: gray;
+}
 /* main-info */
 .info {
     background-color: white;
@@ -118,6 +126,9 @@ main {
     display: flex;
     padding: 16px;
 }
+.info_detail_card:hover {
+    background-color: lightgrey;
+}
 .info_detail_card:first-child {
     margin-top: 16px;
 }
@@ -137,6 +148,10 @@ main {
 .info_detail_card_text a {
     text-decoration: none;
     color: rgb(111, 111, 240);
+}
+.info_detail_card_text a:hover {
+    color: blue;
+    font-style: italic;
 }
 /* main-course-desktop */
 .course_desktop {
@@ -160,6 +175,11 @@ main {
     padding-bottom: 24px;
     background-color: white;
 }
+.course-card:hover {
+    color: white;
+    background-color: rgb(35, 29, 29);
+    transform: translate(-5px,-10px);
+}
 .course-card img {
     margin-bottom: 16px;
 }
@@ -177,6 +197,7 @@ main {
     display: none;
     background-color: white;
     padding: 32px 16px 24px;
+    border: 1px solid lightgray;
 }
 .course_mobile h2 {
     text-align: center;
@@ -227,6 +248,9 @@ main {
     display: flex;
     align-items: center;
 }
+.thesis_other_card:hover {
+    background-color: lightgrey;
+}
 .thesis_other_card img {
     width: 35%;
     padding: 16px;
@@ -255,6 +279,11 @@ footer ul a {
     text-decoration: none;
     color: #414141;
     padding: 8px;
+}
+footer ul a:hover {
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 426px) {
@@ -300,6 +329,7 @@ footer ul a {
     .info_detail_card {
         flex-direction: column;
         padding: 16px 16px 32px;
+        border: none;
     }
     .info_detail_card:first-child {
         margin-top: 0px;
