@@ -140,7 +140,7 @@ main {
 /* main-course-desktop */
 .course_desktop {
     background-color: lightgray;
-    padding: 32px 72px 16px;
+    padding: 32px 72px;
 }
 .course_desktop h2 {
     text-align: center;
@@ -154,7 +154,6 @@ main {
     border: 1px solid red;
 }
 .course-card {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     width: calc(33.33% - 64px);
@@ -199,16 +198,107 @@ main {
     background-color: lightgray;
 }
 /* main-thesis */
+.thesis {
+    padding: 32px 0 32px 24px;
+}
+.thesis h2 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.thesisall {
+    display: flex;
+}
+.thesis_main {
+    width: 60%;
+    padding-right: 24px;
+}
+.thesis_main video {
+    width: 100%;
+}
+.thesis_main h4 {
+    margin: 24px 0 8px;
+}
+.thesis_other {
+    width: 40%;
+    display: flexbox;
+    flex-direction: column;
+}
+.thesis_other_card {
+    display: flex;
+    align-items: center;
+}
+.thesis_other_card img {
+    width: 35%;
+    padding: 16px;
+}
+.thesis_other_card_text {
+    width: 65%;
+}
+.thesis_other_card_text h4 {
+    margin-bottom: 8px;
+}
 /* footer */
+footer {
+    position: relative;
+    top: 64px;
+    border-top: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+footer ul {
+    display: flex;
+    list-style-type: none;
+}
+footer ul a {
+    text-decoration: none;
+    color: #414141;
+    padding: 8px;
+}
 
 @media only screen and (max-width: 426px) {
+    /* header */
     .nav_desktop {
         display: none;
     }
     .nav_mobile ul {
         display: flex;
     }
+    /* main-hero */
+    /* main-info */
+    /* main-course */
+    .course_desktop {
+        display: none;
+    }
     .course_mobile {
         display: block;
+    }
+    /* main-thesis */
+    .thesis {
+        padding: 32px 0 24px;
+    }
+    .thesis h2 {
+        margin-bottom: 16px;
+    }
+    .thesis_main {
+        width: 100%;
+        padding-right: 0;
+    }
+    .thesis_main video {
+        width: 100%;
+    }
+    .thesis_main_text {
+        display: none;
+    }
+    .thesis_other {
+        display: none;
+    }
+    /* footer */
+    footer {
+        padding: 16px;
+    }
+    footer ul {
+        display: none;
     }
 }
